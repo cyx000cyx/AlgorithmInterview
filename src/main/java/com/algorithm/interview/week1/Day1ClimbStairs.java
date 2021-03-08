@@ -1,7 +1,7 @@
 package com.algorithm.interview.week1;
 
 public class Day1ClimbStairs {
-    public int climbStairs(int n) {
+    public int climbStairs1(int n) {
         int fn = 1;
         if (n == 1) {
             return fn;
@@ -18,13 +18,25 @@ public class Day1ClimbStairs {
         return fn;
     }
 
+    public int climbStairs2(int n) {
+        if (n <= 2) {
+            return n;
+        }
+
+        int[] arr = new int[n+1];
+        arr[0] = 1;
+        arr[1] = 1;
+        arr[2] = 2;
+        for (int i = 3; i < n; i++) {
+            arr[i] = arr[i-1] + arr[i-2];
+        }
+        return arr[n];
+    }
+
     public static void main(String[] args) {
         Day1ClimbStairs d = new Day1ClimbStairs();
-        Runtime runtime = Runtime.getRuntime();
-        System.out.println(runtime.totalMemory());
         for (int i = 0; i < 46; i++) {
-            d.climbStairs(i);
+            d.climbStairs2(i);
         }
-        System.out.println(runtime.totalMemory());
     }
 }
