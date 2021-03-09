@@ -3,7 +3,7 @@ package com.algorithm.interview.week1;
 import com.alibaba.fastjson.JSON;
 
 public class Day2PlusOne {
-    public int[] plusOne(int[] digits) {
+    public int[] plusOne1(int[] digits) {
         boolean needAdd = true;
         for (int i = 0; i < digits.length; i++) {
             if (digits[i] != 9) {
@@ -30,6 +30,21 @@ public class Day2PlusOne {
                 needPlus = 0;
             }
         }
+        return digits;
+    }
+
+    public int[] plusOne(int[] digits) {
+        int pointer = digits.length - 1;
+        while (pointer >= 0 && digits[pointer] == 9) {
+            digits[pointer] = 0;
+            pointer -= 1;
+        }
+        if (pointer < 0) {
+            int[] arr = new int[digits.length+1];
+            arr[0] = 1;
+            return arr;
+        }
+        digits[pointer] += 1;
         return digits;
     }
 
