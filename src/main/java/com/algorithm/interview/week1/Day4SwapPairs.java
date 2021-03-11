@@ -9,11 +9,8 @@ public class Day4SwapPairs {
         ListNode first = head;
         head = first.next;
         ListNode tmp = null;
-        while (first != null) {
+        while (first != null && first.next != null) {
             ListNode second = first.next;
-            if (second == null) {
-                break;
-            }
             first.next = second.next;
             second.next = first;
             if (tmp != null) {
