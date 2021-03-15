@@ -1,5 +1,10 @@
 package com.algorithm.interview.week1;
 
+import com.algorithm.interview.common.ListNode;
+
+/**
+ * https://leetcode-cn.com/problems/swap-nodes-in-pairs/
+ */
 public class Day4SwapPairs {
     public ListNode swapPairs(ListNode head) {
         if (head == null || head.next == null) {
@@ -38,11 +43,4 @@ public class Day4SwapPairs {
             result = result.next;
         }
     }
-}
-
-class ListNode {
-    int val;
-    ListNode next;
-    ListNode(int val) { this.val = val; }
-    ListNode(int val, ListNode next) { this.val = val; this.next = next; }
 }

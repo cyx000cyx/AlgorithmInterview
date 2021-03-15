@@ -2,6 +2,9 @@ package com.algorithm.interview.week1;
 
 import com.alibaba.fastjson.JSON;
 
+/**
+ * https://leetcode-cn.com/problems/plus-one/
+ */
 public class Day2PlusOne {
     public int[] plusOne1(int[] digits) {
         boolean needAdd = true;
