@@ -8,6 +8,7 @@ import com.algorithm.interview.common.ListNode;
 public class Day5MergeTwoLists {
 
     public ListNode mergeTwoLists(ListNode l1, ListNode l2) {
+
         return null;
     }
 
