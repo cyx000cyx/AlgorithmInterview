@@ -44,7 +44,7 @@ public class Day13MaximumDepthOfBinaryTree {
     }
 
     public static void main(String[] args) {
-        TreeNode buildTree = BuildTreeUtils.buildTreeByInorder(new Integer[]{3,9,20,null,null,15,7}, 0);
+        TreeNode buildTree = BuildTreeUtils.buildTree(new Integer[]{3,9,20,null,null,15,7}, 0);
         Day13MaximumDepthOfBinaryTree day = new Day13MaximumDepthOfBinaryTree();
         System.out.println(day.maxDepth2(buildTree));
     }
