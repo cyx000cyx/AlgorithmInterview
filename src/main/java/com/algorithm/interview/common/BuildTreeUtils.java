@@ -26,6 +26,11 @@ public class BuildTreeUtils {
         if (root == null) {
             return;
         }
+        TreeNode current = root;
+        TreeNode pre;
+        while (current != null) {
+
+        }
     }
 
     public static void PostorderTraversal(TreeNode root) {
