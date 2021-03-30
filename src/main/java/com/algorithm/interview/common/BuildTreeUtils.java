@@ -16,6 +16,30 @@ public class BuildTreeUtils {
         return tn;
     }
 
+    public static void InorderTraversal(TreeNode root) {
+        if (root == null) {
+            return;
+        }
+    }
+
+    public static void InorderTraversalByMorris(TreeNode root) {
+        if (root == null) {
+            return;
+        }
+    }
+
+    public static void PostorderTraversal(TreeNode root) {
+        if (root == null) {
+            return;
+        }
+    }
+
+    public static void PreorderTraversal(TreeNode root) {
+        if (root == null) {
+            return;
+        }
+    }
+
     public static void main(String[] args) {
         TreeNode result = BuildTreeUtils.buildTree(new Integer[]{3, 9, 20, null, null, 15, 7}, 0);
         System.out.println(JSON.toJSONString(result));
