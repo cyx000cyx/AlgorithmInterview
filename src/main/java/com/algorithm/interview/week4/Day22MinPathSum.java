@@ -1,4 +1,4 @@
-package com.algorithm.interview.week3;
+package com.algorithm.interview.week4;
 
 /**
  * https://leetcode-cn.com/problems/minimum-path-sum/
