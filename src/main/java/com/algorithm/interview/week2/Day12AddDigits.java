@@ -1,5 +1,8 @@
 package com.algorithm.interview.week2;
 
+/**
+ * https://leetcode-cn.com/problems/add-digits/
+ */
 public class Day12AddDigits {
 
     public int addDigits(int num) {
