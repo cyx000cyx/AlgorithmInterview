@@ -4,7 +4,7 @@ package com.algorithm.interview.dp;
  * 91. 解码方法
  * https://leetcode-cn.com/problems/decode-ways/
  */
-public class NumDecodings {
+public class No91NumDecodings {
 
     public int numDecodings(String s) {
         if (s == null || s.length() == 0 || s.charAt(0) == '0') {
@@ -31,7 +31,7 @@ public class NumDecodings {
     }
 
     public static void main(String[] args) {
-        NumDecodings day = new NumDecodings();
+        No91NumDecodings day = new No91NumDecodings();
         System.out.println(day.numDecodings("27"));
         System.out.println(day.numDecodings("1011"));
         System.out.println(day.numDecodings("2101"));

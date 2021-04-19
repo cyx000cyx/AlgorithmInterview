@@ -1,12 +1,10 @@
 package com.algorithm.interview.dp;
 
-import java.util.Arrays;
-
 /**
  * 63. 不同路径 II
  * https://leetcode-cn.com/problems/unique-paths-ii/
  */
-public class UniquePathsWithObstacles {
+public class No63UniquePathsWithObstacles {
 
     public int uniquePathsWithObstacles(int[][] obstacleGrid) {
         if (obstacleGrid == null) {
@@ -75,7 +73,7 @@ public class UniquePathsWithObstacles {
     }
 
     public static void main(String[] args) {
-        UniquePathsWithObstacles day = new UniquePathsWithObstacles();
+        No63UniquePathsWithObstacles day = new No63UniquePathsWithObstacles();
         int[][] arr = new int[][] {
                 new int[]{0, 1, 1},
                 new int[]{0, 1, 0},
